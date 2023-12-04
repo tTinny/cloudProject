@@ -29,7 +29,6 @@ spec:
   selector:
     app.kubernetes.io/name: nclcoudapp
   ports:
-    - procotcol: TCP
-      port: 8080
+    - port: 8080
       targetPort: 8080
       nodePort: 30000
