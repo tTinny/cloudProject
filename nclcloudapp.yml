@@ -3,21 +3,21 @@ kind: Deployment
 metadata:
   name: nclcloud-deployment
   labels:
-    app: app
+    app: nclcloudapp
 spec:
   replicas: 1
   selector:
     matchLabels:
-      app: app
+      app: cloud-app
   template:
     metadata:
       labels:
-        app: app
+        app: cloud-app
     spec:
       containers:
-       — name: nclcoudapp
-         image: nclcloudcomputing/javabenchmarkapp
-         
+      - name: nclcloudapp
+        image: nclcloudcomputing/javabenchmarkapp:latest
+        
 ---
 
 apiVersion: v1
