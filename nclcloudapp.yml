@@ -12,8 +12,8 @@ spec:
         app: web
     spec:
       containers:
-       —name: nclcoudapp
-          image: nclcloudcomputing/javabenchmarkapp
+       — name: nclcoudapp
+         image: nclcloudcomputing/javabenchmarkapp
 ---
 apiVersion: v1
 kind: Service
