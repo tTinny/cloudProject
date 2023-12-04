@@ -16,7 +16,7 @@ spec:
     spec:
       containers:
       - name: nclcloudapp
-        image: nclcloudcomputing/javabenchmarkapp:latest
+        image: nclcloudcomputing:latest
         
 ---
 
