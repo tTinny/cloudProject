@@ -4,7 +4,7 @@ import json
 import threading
 
 def load_config_file():
-    with open('/Users/prakritiarora/Documents/cloud_computing/config.json', 'r') as config_file:
+    with open('config.json', 'r') as config_file:
         config = json.load(config_file)
     return config
 
