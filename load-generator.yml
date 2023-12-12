@@ -1,0 +1,19 @@
+apiVersion: apps/v1
+kind: Deployment
+metadata:
+  name: benchmarking-deployment
+  labels:
+    app: benchmarking
+spec:
+  replicas: 1
+  selector:
+    matchLabels:
+      app: benchmarking-app
+  template:
+    metadata:
+      labels:
+        app: benchmarking-app
+    spec:
+      containers:
+      - name: benchmarkingapp
+        image: load-generator
