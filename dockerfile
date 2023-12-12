@@ -6,6 +6,6 @@ ADD . /home/src
 
 WORKDIR /home/src
 
-RUN pip3 install -r requirements.txt
+RUN pip3 install requests
 
 CMD python3 load_generator.py
